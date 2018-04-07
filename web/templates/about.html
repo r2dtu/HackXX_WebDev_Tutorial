@@ -1,0 +1,73 @@
+<!-- HackXX_Tutorial About Page -->
+
+{%  extends 'header.html' %}
+
+{% block content %}
+
+{% load staticfiles %}
+
+<header class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="/">HackXX_Tutorial</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/about">About<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="/youtubeapp/videos">Projects</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="/youtubeapp/videos">Project 1</a>
+                        <a class="dropdown-item" href="#">Project 2</a>
+                        <a class="dropdown-item" href="#">Project 3</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<br><br>
+<center>
+    <img src="{% static 'images/geisel.jpg' %}"/>
+</center>
+<br><br>
+<section class="container">
+    <div class="row">
+        <figure class="col-sm-4">
+            <h2>HackXX</h2>
+            <a href="http://hackxx.sdhacks.io/">
+                <img src="{% static 'images/hackxx.svg' %}" height="250px"/></a>
+            <p>HackXX is UC San Diego's women-centric hackathon. It’s an empowering place to build great projects. Over
+                24 hours, women will be given the tools and knowledge to materialize their technological dreams.
+                <a href="http://hackxx.sdhacks.io/">Learn more.</a></p>
+        </figure>
+        <figure class="col-sm-4">
+            <h2>HackXX</h2>
+            <a href="http://hackxx.sdhacks.io/">
+                <img src="{% static 'images/hackxx.svg' %}" height="250px"/></a>
+            <p>HackXX is UC San Diego's women-centric hackathon. It’s an empowering place to build great projects. Over
+                24 hours, women will be given the tools and knowledge to materialize their technological dreams.
+                <a href="http://hackxx.sdhacks.io/">Learn more.</a></p>
+        </figure>
+        <figure class="col-sm-4">
+            <h2>HackXX</h2>
+            <a href="http://hackxx.sdhacks.io/">
+                <img src="{% static 'images/hackxx.svg' %}" height="250px"/></a>
+            <p>HackXX is UC San Diego's women-centric hackathon. It’s an empowering place to build great projects. Over
+                24 hours, women will be given the tools and knowledge to materialize their technological dreams.
+                <a href="http://hackxx.sdhacks.io/">Learn more.</a></p>
+        </figure>
+    </div>
+</section>
+
+{% endblock %}
